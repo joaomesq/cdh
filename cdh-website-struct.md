@@ -72,8 +72,8 @@ Automatizar  deploy no merge para main de modo a agilizar releases. branch main 
 - Hospedagem: Vercel
 - Controle de versão: Git + GitHub
 - Forms: Forms
-- Gestão - GitHub projets( trocaremos o kanban pelo SCRUM/Ideia de migrar completamente para o Trello)
-- Busca - Fuse.js(busca local)
+- Gestão: GitHub projets( trocaremos o kanban pelo SCRUM/Ideia de migrar completamente para o Trello)
+- Busca: Fuse.js(busca local)
 
 ---
 ## RESPONSABILIDADES
@@ -94,7 +94,7 @@ Automatizar  deploy no merge para main de modo a agilizar releases. branch main 
 - Gera os primeiros posts do blog
 - Escreve o conteúdo das páginas fixas
 
-####Gestor
+### Gestor
 - Coordena as entregas
 - Valida conteúdo e organização
 - Pode conectar Goooogle Analytics, criar roadmap...
