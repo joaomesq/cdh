@@ -1,0 +1,47 @@
+---
+import { getCollection } from 'astro:content';
+import BlogCard from './BlogCard.astro';
+import BlogModal from './BlogModal.astro';
+
+const posts = (await getCollection('blog')).sort((a, b) =>
+  b.data.pubDate.getTime() - a.data.pubDate.getTime()
+);
+
+const renderedPosts = [];
+
+for (const post of posts) {
+  const { Content } = await post.render();
+  renderedPosts.push({ ...post, Content });
+}
+---
+
+<script is:inline>
+  function openModal(slug) {
+    const modal = document.getElementById(`modal-${slug}`);
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal(slug) {
+    const modal = document.getElementById(`modal-${slug}`);
+    modal.classList.add('hidden');
+    document.body.style.overflow = 'auto';
+  }
+</script>
+
+<section class="text-center py-16 bg-gradient-to-br from-blue-50 to-white mb-10 rounded-xl shadow-sm">
+  <h1 class="text-4xl font-extrabold text-blue-700 mb-4">Explore nossos Artigos Técnicos</h1>
+  <p class="text-lg text-gray-600 max-w-xl mx-auto">
+    Dicas práticas, experiências da comunidade, soluções em código — tudo isso você encontra aqui. 
+  </p>
+</section>
+
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  {renderedPosts.map(({ data, slug }) => (
+    <BlogCard data={data} slug={slug} />
+  ))}
+</ul>
+
+{renderedPosts.map(({ data, Content, slug }) => (
+  <BlogModal data={data} slug={slug} Content={Content} />
+))}
