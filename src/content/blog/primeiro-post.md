@@ -17,7 +17,7 @@ tags: ["aniversário", "tecnologia", "comunidade", "Huambo", "CDH"]
         class="w-full h-96 object-cover"
       >
     </div>
-    <h1 class="text-4xl font-bold text-blue-600 mb-4">🎉 Hoje completamos 1 Ano de CDH!</h1>
+    <h1 class="text-2xl font-bold text-blue-900 mb-4">🎉 Hoje completamos 1 Ano de CDH!</h1>
     <p class="text-xl"><strong>27 de Julho de 2025</strong> - Celebramos 1 ano de existência da <span class="text-blue-500 font-semibold">CDH – Comunidade de Desenvolvedores do Huambo</span>.</p>
   </div>
 
