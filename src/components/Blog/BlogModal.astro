@@ -1,0 +1,36 @@
+---
+export interface Props {
+  slug: string;
+  data: any;
+  Content: any;
+}
+
+const { slug, data, Content } = Astro.props;
+---
+
+<div id={`modal-${slug}`} class="hidden fixed inset-0 z-50 overflow-auto bg-black bg-opacity-70 backdrop-blur-md transition-opacity duration-300">
+  <div class="relative bg-white rounded-2xl shadow-2xl mx-auto my-8 p-8 max-w-4xl w-[90%] max-h-[90vh] overflow-y-auto animate-scaleIn">
+    <button 
+      onclick={`closeModal('${slug}')`} 
+      class="absolute top-6 right-6 text-gray-500 hover:text-gray-700 transition-colors"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+    
+    <div class="prose prose-lg max-w-none">
+      <h1 class="text-3xl font-bold text-blue-800 mb-4">{data.title}</h1>
+      
+      <Content />
+
+      <p class="text-gray-500 mb-8 border-b pb-4">
+        Publicado em: {data.pubDate.toLocaleDateString('pt-PT', {
+          day: 'numeric',
+          month: 'long',
+          year: 'numeric'
+        })}
+      </p>
+    </div>
+  </div>
+</div>
