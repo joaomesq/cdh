@@ -17,8 +17,10 @@ const {title = "CDH | Comunidade de desenvolvedores do Huambo"} = Astro.props;
 	<body>
 	    <Header />
 
-	    <main class="main bg-gray-100 mt-12">
-		    <slot />
+	    <main class="main bg-gray-100 mt-14">
+		    <section class="py-4">
+			    <slot />
+			</section>
 		</main>
 
 		<Footer />
