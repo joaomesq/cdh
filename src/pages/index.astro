@@ -2,6 +2,7 @@
 //components
 import Slider from '../components/Slider/Slider.tsx';
 import Card from '../components/Card/Card.tsx';
+import CallAction from '../components/Call-To-Action/Call-Action.tsx';
 import Layout from '../layouts/Layout.astro';
 ---
 
@@ -9,8 +10,14 @@ import Layout from '../layouts/Layout.astro';
     <section class="slide">
 	    <Slider client:load/>
 	</section>
+	
+	<section class="sobre p-4 mb-2">
+	    <h4 class="font-bold">Sobre a CDH</h4>
+		<p class="mb-2">"Surgimos pela pela iniciativa de reunir toda uma comunidade de profissionais, entusiastas e simpatizantes das Tecnologias de Informação e Comunicação da cidade visando alargar o nível de exposição dos talentos locais no uso e produção de soluções tecnológicas emergentes..."</p>
+		<CallAction texto="Saber mais!" link="/quem-somos"/>
+	</section>
 
-	<section class="grid grid-cols-2 ">
+	<section class="grid grid-cols-2 py-2 bg-white">
 	    <Card titulo="Visão" descricao="Ver o Huambo reconhecido como um polo tecnólogico nacional, impulsionado por jovens compremetidos com o futuro." background="bg-cdh-orange"/>
 		<Card titulo="Missão" descricao="Ser uma ponte entre o potencial humano nas tecnologias e as oportunidades emergentes"/>
  	</section>
