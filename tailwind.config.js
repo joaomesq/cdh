@@ -12,6 +12,7 @@
         'cdh-pink': '#E5397A',
         'cdh-coral': '#F1615A',
         'cdh-orange': '#EE9B4A',
+        'call-action': 'rgba(255, 110, 0, 0.9)',
         'cdh-teal': '#59B5AD',
         'cdh-blue': '#3498C6',
         'cdh-purple': '#6F57A6',

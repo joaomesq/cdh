@@ -1,10 +1,12 @@
 ---
 //components
-import Welcome from '../components/Welcome.astro';
+import Slider from '../components/Slider/Slider.tsx';
 import Layout from '../layouts/Layout.astro';
 
 ---
 
 <Layout>
-	<Welcome />
+    <section class="slide">
+	    <Slider client:load/>
+	</section>
 </Layout>
