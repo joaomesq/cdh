@@ -1,0 +1,26 @@
+---
+import "../styles/global.css";
+import Header from "../layouts/Header.astro";
+import Footer from "../layouts/Footer.astro";
+
+const {title = "CDH | Comunidade de desenvolvedores do Huambo"} = Astro.props;
+---
+<!doctype html>
+<html lang="pt-ao">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+	    <Header />
+
+	    <main class="main bg-gray-100 mt-12">
+		    <slot />
+		</main>
+
+		<Footer />
+	</body>
+</html>

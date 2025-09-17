@@ -1,0 +1,37 @@
+---
+import NossaHistoria from './NossaHistoria.jsx';
+import MissaoVisaoValores from './MissaoVisaoValores.jsx';
+import LinhaDoTempo from './LinhaDoTempo.jsx';
+import Parceiros from './Parceiros.jsx';
+
+
+
+const timeline = [
+  { date: '07-2024', title: 'Fundação da CDH', img: '../src/assets/imagens/start.jpg', desc: 'Início com reuniões informais e oficinas.' },
+  { date: '02-2025', title: 'Recrutamento para os departamentos', img: '../src/assets/imagens/Recrutamento.jpg', desc: 'Recrutamento para os departamento da CDH, foi uma grande campanha.' },
+  { date: '04-2025', title: 'Resultados do processo de seleção', img: '../src/assets/imagens/Resultado.jpg', desc: 'Anuncio dos resultados do processo de seleção dos novos membros.' },
+  { date: '05-2025', title: 'Primeiro episódio da Live Cast', img: '../src/assets/imagens/firstLive.jpg', desc: 'Primeira live com convidados de diversas áreas.' },
+  { date: '05-2025', title: 'Segundo episódio da Live Cast', img: '../src/assets/imagens/secondLive.jpg', desc: 'A importância do inglês para o profissional no mercado de trabalho.' },
+  { date: '05-2025', title: 'Entrevista na Rádio Mais', img: '../src/assets/imagens/anuncio.jpg', desc: 'Entrevista na Rádio Mais sobre o Coding Angola.' },
+  { date: '06-2025', title: 'Coding Angola', img: '../src/assets/imagens/coding.jpg', desc: 'Primeiro evento público de programação na Província do Huambo.' },
+  { date: '06-2025', title: 'Terceiro episódio do Live Cast', img: '../src/assets/imagens/participantes.jpg', desc: 'Conversa com os vencedores das categorias do Coding Angola.' },
+  { date: '07-2025', title: 'Entrega das bolsas', img: '../src/assets/imagens/bolsas.jpg', desc: 'Entrega das bolsas de estudo ao segundo e terceiro classificado na categoria de Fron-end.' },
+  { date: '07-2025', title: 'Quarto episódio do Live Cast', img: '../src/assets/imagens/4live.jpg', desc: 'Reflexões na área de Cibersegurança.' },
+  { date: '07-2025', title: 'Primeiro aniversário da CDH', img: '../src/assets/first.jpg', desc: 'Comemoração do primeiro aniversário da Comunidade de Desenvolvedores do Huambo.' },
+  { date: '08-2025', title: 'Quinto episódio do Live Cast', img: '../src/assets/imagens/fiveLive.jpg', desc: 'Como transformar uma ideia simples num negócio que gera renda real.' },
+  { date: '08-2025', title: 'Sexto episódio do Live Cast', img: '../src/assets/imagens/sixLive.jpg', desc: 'De estudante a desenvolvedor, construindo carreira com propósito.' },
+
+];
+
+const partners = [
+  { name: 'Digital.Ao Huambo', logo: '../src/assets/logos/digital.png', href: 'https://digital.ao/ao/' },
+  { name: 'Try-Code', logo: '../src/assets/logos/try-code-logo.png', href: 'https://trycode-angola.com/' },
+  { name: 'Mediateca do Huambo', logo: '../src/assets/logos/rema.png', href: 'https://www.facebook.com/mediateca.huambo' },
+];
+---
+<main class="max-w-5xl mx-auto px-0 py-8 space-y-8">
+  <NossaHistoria />
+  <MissaoVisaoValores />
+  <LinhaDoTempo items={timeline as any} />
+  <Parceiros partners={partners as any} />
+</main>

@@ -1,0 +1,60 @@
+---
+import { getCollection } from 'astro:content';
+import BlogCard from './BlogCard.astro';
+import BlogModal from './BlogModal.astro';
+
+const posts = (await getCollection('blog')).sort((a, b) =>
+  b.data.pubDate.getTime() - a.data.pubDate.getTime()
+);
+
+const renderedPosts = [];
+
+for (const post of posts) {
+  const { Content } = await post.render();
+  renderedPosts.push({ ...post, Content });
+}
+---
+
+<script is:inline>
+  function openModal(slug) {
+    const modal = document.getElementById(`modal-${slug}`);
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal(slug) {
+    const modal = document.getElementById(`modal-${slug}`);
+    modal.classList.add('hidden');
+    document.body.style.overflow = 'auto';
+  }
+</script>
+
+<section class="text-center py-16 bg-gradient-to-br from-blue-50 to-white mb-10 rounded-xl shadow-sm">
+  <h1 class="text-4xl font-extrabold text-blue-900 mb-4">Explore nossos Artigos Técnicos</h1>
+  <p class="text-lg text-gray-600 max-w-xl mx-auto">
+    Dicas práticas, experiências da comunidade, soluções em código — tudo isso você encontra aqui. 
+  </p>
+</section>
+
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  {renderedPosts.map(({ data, slug }) => (
+    <BlogCard data={data} slug={slug} />
+  ))}
+</ul>
+<section class="mt-16 bg-gradient-to-r from-blue-900 to-purple-800 rounded-2xl shadow-lg p-8 text-center text-white ">
+  <h2 class="text-3xl md:text-4xl font-bold mb-4">
+    Continue a sua jornada de conhecimento 
+  </h2>
+  <p class="text-lg mb-6">
+    Explore mais artigos, compartilhe ideias e faça parte da nossa comunidade de desenvolvimento.
+  </p>
+  <a href="/contato" class="inline-block bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg shadow hover:shadow-xl transition-transform transform hover:scale-105">
+    Enviar meu artigo
+  </a>
+</section>
+ <hr>
+
+
+{renderedPosts.map(({ data, Content, slug }) => (
+  <BlogModal data={data} slug={slug} Content={Content} />
+))}
