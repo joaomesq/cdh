@@ -10,15 +10,31 @@ import Layout from '../layouts/Layout.astro';
     <section class="slide">
 	    <Slider client:load/>
 	</section>
-	
-	<section class="sobre p-4 mb-2">
-	    <h4 class="font-bold">Sobre a CDH</h4>
-		<p class="mb-2">"Surgimos pela pela iniciativa de reunir toda uma comunidade de profissionais, entusiastas e simpatizantes das Tecnologias de Informação e Comunicação da cidade visando alargar o nível de exposição dos talentos locais no uso e produção de soluções tecnológicas emergentes..."</p>
-		<CallAction texto="Saber mais!" link="/quem-somos"/>
-	</section>
 
-	<section class="grid grid-cols-2 py-2 bg-white">
-	    <Card titulo="Visão" descricao="Ver o Huambo reconhecido como um polo tecnólogico nacional, impulsionado por jovens compremetidos com o futuro." background="bg-cdh-orange"/>
-		<Card titulo="Missão" descricao="Ser uma ponte entre o potencial humano nas tecnologias e as oportunidades emergentes"/>
- 	</section>
+	<section class="destaques p-4 bg-white">
+	    <h4 class="font-bold mb-2">Áreas de atuação</h4>
+		<div class="grid grid-cols-3 md:grid-cols-4 gap-1 text-white">
+		   <Card descricao="Formação e mentoria" background="bg-cdh-dark"/>
+		   <Card descricao="Hackathons e Eventos" background="bg-cdh-dark"/>
+		   <Card descricao="Projetos Comunitários" background="bg-cdh-dark"/>
+		   <span class="hidden md:block">
+		       <Card descricao="Parcerias" background="bg-cdh-dark"/>
+		   </span>
+		</div>
+	</section>
+	
+	<section class="resumo md:grid md:grid-cols-2">
+	    <div class="sobre mb-2 p-6">
+		    <h4 class="font-bold">Sobre a CDH</h4>
+		    <p class="mb-2">"Surgimos pela pela iniciativa de reunir toda uma comunidade de profissionais, entusiastas e simpatizantes das Tecnologias de Informação e Comunicação da cidade visando alargar o nível de exposição dos talentos locais no uso e produção de soluções tecnológicas emergentes..."</p>
+		    <CallAction texto="Saber mais!" link="/quem-somos"/>
+	    </div>
+
+	    <div class="h-full p-6 mb-2 md:hidden md:mb-0 grid grid-cols-2  bg-white text-white">
+	        <Card titulo="Visão" descricao="Ver o Huambo reconhecido como um polo tecnólogico nacional." background="bg-cdh-dark"/>
+		    <Card titulo="Missão" descricao="Ser uma ponte entre o potencial humano nas tecnologias e as oportunidades emergentes" background="bg-cdh-dark"/>
+ 	    </div>
+
+		<div class="hidden bg-[url('../src/assets/imagens/start.jpg')] bg-cover bg-center md:block p-2"></div>
+	</section>
 </Layout>
