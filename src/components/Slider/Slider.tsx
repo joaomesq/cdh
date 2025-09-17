@@ -53,7 +53,7 @@ export default function Slider(){
             </div>
 
             {/*Controllers*/}
-            <div className="absolute bottom-4 left-1/2 flex space-x-2 z-10">
+            <div className="absolute bottom-4 left-1/1 flex space-x-2 z-10">
                 {slides.map((_, index)=> (
                     <button key={index} onClick={()=> setCurrent(index)} className={`w-3 h-3 rounded-full ${current === index ? "bg-white": "bg-gray-400"}`} />
                 ))}
