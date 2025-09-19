@@ -49,7 +49,7 @@ export default function Slider(){
                 <p className="text-lg mb-4">{descricao}</p>
 
                 {/*Call to action */}
-                <CallAction texto="Junte-se a nós" link="#"/>
+                <CallAction texto="Junte-se a nós" link="https://www.facebook.com/groups*sdh.community.group/permalink/3980161625462870"/>
             </div>
 
             {/*Controllers*/}
