@@ -2,27 +2,58 @@
 const { links = [] } = Astro.props;
 ---
 
+<!-- Overlay -->
 <section
   id="mobile-menu"
-  class="hidden flex-col gap-6 p-6 bg-white shadow-md md:hidden"
+  class="hidden fixed inset-0 z-40 bg-black bg-opacity-60 md:hidden"
 >
-  {links.map((link) => (
-    <a
-      href={link.href}
-      class="hover:text-blue-600 transition"
-    >
-      {link.label}
-    </a>
-  ))}
+  <!-- Sidebar -->
+  <div
+    class="absolute top-0 right-0 h-full w-72 bg-white shadow-xl flex flex-col p-6 gap-6 transform translate-x-full transition-transform duration-300 ease-in-out"
+    id="mobile-menu-panel"
+  >
+    <!-- Header do menu -->
+    <div class="flex items-center justify-between border-b pb-4">
+      <h2 class="text-lg font-bold text-gray-800">Menu</h2>
+      <button id="menu-close" class="text-2xl font-bold text-gray-600 hover:text-gray-900">
+        ✕
+      </button>
+    </div>
+
+    <!-- Links -->
+    <nav class="flex flex-col gap-4 mt-4">
+      {links.map((link) => (
+        <a
+          href={link.href}
+          class="block px-4 py-3 rounded-xl text-gray-700 font-medium bg-gray-100 hover:bg-blue-600 hover:text-white transition"
+        >
+          {link.label}
+        </a>
+      ))}
+    </nav>
+  </div>
 </section>
 
 <script>
   if (typeof window !== "undefined") {
     const toggle = document.getElementById("menu-toggle");
+    const closeBtn = document.getElementById("menu-close");
     const menu = document.getElementById("mobile-menu");
+    const panel = document.getElementById("mobile-menu-panel");
 
     toggle?.addEventListener("click", () => {
-      menu?.classList.toggle("hidden");
+      menu?.classList.remove("hidden");
+      setTimeout(() => panel?.classList.remove("translate-x-full"), 10);
+    });
+
+    const closeMenu = () => {
+      panel?.classList.add("translate-x-full");
+      setTimeout(() => menu?.classList.add("hidden"), 300);
+    };
+
+    closeBtn?.addEventListener("click", closeMenu);
+    menu?.addEventListener("click", (e) => {
+      if (e.target === menu) closeMenu();
     });
   }
 </script>
