@@ -1,1 +1,28 @@
+---
+const { links = [] } = Astro.props;
+---
 
+<section
+  id="mobile-menu"
+  class="hidden flex-col gap-6 p-6 bg-white shadow-md md:hidden"
+>
+  {links.map((link) => (
+    <a
+      href={link.href}
+      class="hover:text-blue-600 transition"
+    >
+      {link.label}
+    </a>
+  ))}
+</section>
+
+<script>
+  if (typeof window !== "undefined") {
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("mobile-menu");
+
+    toggle?.addEventListener("click", () => {
+      menu?.classList.toggle("hidden");
+    });
+  }
+</script>
