@@ -34,7 +34,7 @@
     <!-- Overlay escuro -->
     <div id="menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
 
-    <!-- Sidebar -->
+    <!-- Sidebar alinhado à direita -->
     <aside id="mobile-menu" class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-50">
       <div class="flex justify-between items-center p-5 border-b">
         <h2 class="text-lg font-bold">Menu</h2>
@@ -47,7 +47,7 @@
         </button>
       </div>
       <nav class="p-5">
-        <ul class="flex flex-col space-y-4 text-lg">
+        <ul class="flex flex-col space-y-4 text-lg items-end"> <!-- alinhado à direita -->
           <li><a href="/" class="hover:text-blue-600">Home</a></li>
           <li><a href="/quem-somos" class="hover:text-blue-600">Quem somos</a></li>
           <li><a href="/equipa" class="hover:text-blue-600">Equipa</a></li>
@@ -61,25 +61,4 @@
 
 <script>
   const menuToggle = document.getElementById("menu-toggle");
-  const mobileMenu = document.getElementById("mobile-menu");
-  const menuOverlay = document.getElementById("menu-overlay");
-  const closeMenu = document.getElementById("close-menu");
-
-  // Abrir menu
-  menuToggle.addEventListener("click", () => {
-    mobileMenu.classList.remove("translate-x-full");
-    menuOverlay.classList.remove("hidden");
-  });
-
-  // Fechar menu
-  closeMenu.addEventListener("click", () => {
-    mobileMenu.classList.add("translate-x-full");
-    menuOverlay.classList.add("hidden");
-  });
-
-  // Fechar clicando no overlay
-  menuOverlay.addEventListener("click", () => {
-    mobileMenu.classList.add("translate-x-full");
-    menuOverlay.classList.add("hidden");
-  });
-</script>
+  const mobile
