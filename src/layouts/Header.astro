@@ -1,19 +1,85 @@
-<header class="header p-5 pb-2 flex justify-between top-0 w-full border-b-2 fixed bg-white">
-  <section class="">
+<header class="header p-5 pb-2 flex justify-between items-center top-0 w-full border-b-2 fixed bg-white z-50">
+  <!-- Logo -->
+  <section>
     <a href="/">
       <h1 class="title font-bold text-lg">CDH</h1>    
     </a>
   </section>
-  
+
+  <!-- Navegação -->
   <section>
-    <nav>
+    <!-- Menu Desktop -->
+    <nav class="hidden md:block">
       <ul class="flex">
         <li class="mx-2"><a href="/" >Home</a></li>
         <li class="mx-2"><a href="/quem-somos" >Quem somos</a></li>
-        <li class="mx-2"><a href="/" >Equipa</a></li>
+        <li class="mx-2"><a href="/equipa" >Equipa</a></li>
         <li class="mx-2"><a href="/blog" >Blog</a></li>
-        <li class="mx-2"><a href="/" >Contato</a></li>
+        <li class="mx-2"><a href="/contato" >Contato</a></li>
       </ul>
     </nav>
+
+    <!-- Botão hambúrguer (mobile) -->
+    <button id="menu-toggle" class="block md:hidden p-2 rounded focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </section>
+
+  <!-- Sidebar + Overlay (Mobile) -->
+  <section>
+    <!-- Overlay escuro -->
+    <div id="menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
+
+    <!-- Sidebar -->
+    <aside id="mobile-menu" class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-50">
+      <div class="flex justify-between items-center p-5 border-b">
+        <h2 class="text-lg font-bold">Menu</h2>
+        <button id="close-menu" class="p-2">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <nav class="p-5">
+        <ul class="flex flex-col space-y-4 text-lg">
+          <li><a href="/" class="hover:text-blue-600">Home</a></li>
+          <li><a href="/quem-somos" class="hover:text-blue-600">Quem somos</a></li>
+          <li><a href="/equipa" class="hover:text-blue-600">Equipa</a></li>
+          <li><a href="/blog" class="hover:text-blue-600">Blog</a></li>
+          <li><a href="/contato" class="hover:text-blue-600">Contato</a></li>
+        </ul>
+      </nav>
+    </aside>
   </section>
 </header>
+
+<script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const menuOverlay = document.getElementById("menu-overlay");
+  const closeMenu = document.getElementById("close-menu");
+
+  // Abrir menu
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.remove("translate-x-full");
+    menuOverlay.classList.remove("hidden");
+  });
+
+  // Fechar menu
+  closeMenu.addEventListener("click", () => {
+    mobileMenu.classList.add("translate-x-full");
+    menuOverlay.classList.add("hidden");
+  });
+
+  // Fechar clicando no overlay
+  menuOverlay.addEventListener("click", () => {
+    mobileMenu.classList.add("translate-x-full");
+    menuOverlay.classList.add("hidden");
+  });
+</script>
