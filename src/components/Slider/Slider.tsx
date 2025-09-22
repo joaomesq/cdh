@@ -33,17 +33,17 @@ export default function Slider(){
     useEffect(()=> {
         const interval = setInterval(() => {
             setCurrent((prev) => (prev +1) % slides.length);
-        }, 3000);
+        }, 2500);
         return () => clearInterval(interval);
     }, []);
 
     const { imagem, titulo, descricao } = slides[current];
     return (
-        <section className="w-full h-[400px] flex items-center flex-col justify-center text-white text-center" style={{ backgroundImage: `url(${imagem})`, backgroundSize: "Cover", backgroundPosition: "center"}}>
+        <section className="w-full h-[400px] md:h-[500px] flex items-center flex-col justify-center text-white text-center" style={{ backgroundImage: `url(${imagem})`, backgroundSize: "Cover", backgroundPosition: "center"}}>
             {/*escurecendo o fundo*/}
 
             {/*Textos*/}
-            <div className="max-w-xl text-left md:text-center p-4 py-8 h-[300px]">
+            <div className="max-w-xl text-left p-4 py-8 h-[300px]">
                 <h2 className="text-3xl font-bold mb-2">{titulo}</h2>
                 <p className="text-lg mb-4">{descricao}</p>
 

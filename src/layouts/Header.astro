@@ -1,6 +1,6 @@
 ---
 import MobileMenu from "../components/MobileMenu/MobileMenu.astro";
-
+import Logo from "../components/Logo/Logo.Astro";
 const links = [
   { href: "/", label: "Início" },
   { href: "/quem-somos", label: "Sobre" },
@@ -13,7 +13,9 @@ const links = [
   <section class="max-w-7xl mx-auto flex items-center justify-between p-4">
     <!-- Logo -->
     <div class="text-2xl font-bold">
-       <a href="/">CDH</a>
+      <a href="/">
+        <Logo/>
+      </a>
     </div>
 
     <!-- Menu desktop -->
