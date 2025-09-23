@@ -3,14 +3,14 @@ import MobileMenu from "../components/MobileMenu/MobileMenu.astro";
 import Logo from "../components/Logo/Logo.astro";
 const links = [
   { href: "/", label: "Início" },
-  { href: "/quem-somos", label: "Sobre" },
+  { href: "/quem-somos", label: "Quem Somos" },
   { href:"/blog", label: "Blog"},
   { href: "/contatos", label: "Contato" },
 ];
 ---
 
 <header class="w-full bg-white shadow-md fixed top-0">
-  <section class="max-w-7xl mx-auto flex items-center justify-between p-4">
+  <section class="max-w-7xl mx-auto flex items-center justify-between p-4 py-2">
     <!-- Logo -->
     <div class="text-2xl font-bold">
       <a href="/">
@@ -21,12 +21,7 @@ const links = [
     <!-- Menu desktop -->
     <nav class="hidden md:flex gap-8 text-gray-700 font-medium">
       {links.map((link) => (
-        <a
-          href={link.href}
-          class="hover:text-blue-600 transition"
-        >
-          {link.label}
-        </a>
+        <a href={link.href} class="hover:text-blue-600 transition">{link.label}</a>
       ))}
     </nav>
 
