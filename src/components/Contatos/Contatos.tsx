@@ -15,7 +15,7 @@ export default function Contatos() {
     
 
   return (
-    <main className="min-h-screen flex flex-col gap-16 bg-gray-50 p-4 p-10 flex-wrap">
+    <main className="min-h-screen flex flex-col gap-16 bg-gray-50 p-10 flex-wrap">
       {/* Grid principal */}
       <section className="grid md:grid-cols-2 gap-10">
         {/* Coluna Esquerda */}
