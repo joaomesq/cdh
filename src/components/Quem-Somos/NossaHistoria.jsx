@@ -35,7 +35,7 @@ export default function NossaHistoria() {
     
 </main>
 
-      <div className="mt-28 bg-[color:var(--cdh-teal)/6] p-4 rounded-lg border border-orange-100 flex justify-between">
+      <div className="mt-28 bg-[color:var(--cdh-teal)/6] p-4 rounded-lg border border-orange-100 flex justify-between items-center">
         <div>
   <h3 className="font-semibold text-lg mb-2 text-orange-400">Por que existimos?</h3>
         <ul className="list-inside space-y-1 text-gray-700">
@@ -47,7 +47,7 @@ export default function NossaHistoria() {
 
         </div>
 
-    <div className='z-10'>
+    <div className='z-10 h-full flex items-center justify-center '>
 			 <div style={{zIndex:"auto", backgroundImage: `url(img/cdh/iconePNG.png)`, backgroundSize: "Cover", backgroundPosition: "center",animationDuration:"3s"}} class="mt-4 relative w-[100px] h-[100px] animate-spin"></div>
 		</div>
       

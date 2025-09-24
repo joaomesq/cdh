@@ -40,7 +40,7 @@ export default function Slider(){
     const { imagem, titulo, descricao } = slides[current];
     return (
         <>
-        <section className="w-full p-48 h-[700px] md:h-[700px] flex flex-col items-center justify-around text-black" 
+        <section className="w-full py-20 md:p-48 h-[700px] md:h-[700px] flex flex-col items-center justify-around text-black" 
          style={{ backgroundImage: `url(${imagem})`, backgroundSize: "Cover", backgroundPosition: "center"}}
         >
             {/*escurecendo o fundo*/}
