@@ -9,7 +9,7 @@ export default function Contatos() {
       <section className="grid grid-cols-1 gap-10">
         <ContatoInfo />
         <ContatoForm />
-        <ContatoMap />
+        <ContatoMap />    
       </section>
     </main>
   );
