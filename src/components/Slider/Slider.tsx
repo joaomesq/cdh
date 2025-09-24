@@ -40,20 +40,20 @@ export default function Slider(){
     const { imagem, titulo, descricao } = slides[current];
     return (
         <>
-        <section className="w-full  md:mt-32 p-3 h-[600px] md:h-[500px] flex flex-col items-center justify-around text-black" 
-        // style={{ backgroundImage: `url(${imagem})`, backgroundSize: "Cover", backgroundPosition: "center"}}
+        <section className="w-full p-48 h-[700px] md:h-[700px] flex flex-col items-center justify-around text-black" 
+         style={{ backgroundImage: `url(${imagem})`, backgroundSize: "Cover", backgroundPosition: "center"}}
         >
             {/*escurecendo o fundo*/}
-        <main className="flex items-center h-[100%] justify-center  text-black text-center">
+        <main className="flex items-center h-[80%] justify-center  text-black text-center">
             {/*Textos*/}
             <div className="max-w-4xl p-4 py-3 flex flex-col items-center justify-center">
                 <h2 className="text-5xl text-orange-400 font-bold mb-2">{titulo}</h2>
-                <p className="text-lg text-gray-500 mb-4">{descricao}</p>
+                <p className="text-lg text-white mb-4">{descricao}</p>
 
             </div>
        </main>
 
-  <main className="flex items-center h-[20%] justify-center w-full bg-white">
+  <main className="flex items-center h-[5%] justify-center w-full ">
               {/*Call to action */}
                 <div className="">
                 {slides.map((_, index)=> (
@@ -63,7 +63,7 @@ export default function Slider(){
           </main>
 
       {/*Controllers*/}
-          <main className="flex items-center justify-center mt-10 w-full bg-white">
+          <main className="flex items-center h-[5%] justify-center mt-10 w-full ">
               <CallAction 
                 texto="Junte-se a nós" 
                 link="https://www.facebook.com/groups*sdh.community.group/permalink/3980161625462870"/>
