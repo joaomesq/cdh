@@ -5,8 +5,8 @@ export default function LinhaDoTempo({ items = [] }) {
 
   return (
     <section id="linha-do-tempo" className="bg-white rounded-lg shadow-sm p-6">
-      <h2 className="text-2xl font-bold text-cdh-dark">Linha do Tempo</h2>
-      <p className="text-gray-600 mt-2">Eventos marcantes da comunidade</p>
+      <h2 className="text-2xl font-bold text-orange-400 text-center">Linha do Tempo</h2>
+      <p className="text-gray-600 mt-2 text-center">Eventos marcantes da comunidade</p>
 
       <div className="mt-4">
         <div className="flex gap-4 overflow-x-auto py-2 snap-x snap-mandatory">

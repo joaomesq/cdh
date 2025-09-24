@@ -3,10 +3,10 @@ import React from 'react';
 export default function Parceiros({ partners = [] }) {
   return (
     <section id="parceiros" className="bg-white rounded-lg shadow-sm p-6">
-      <h2 className="text-2xl font-bold text-cdh-dark">Parceiros e Reconhecimentos</h2>
-      <p className="text-gray-600 mt-2">Agradecemos aos nossos parceiros por fortalecerem nossa missão</p>
+      <h2 className="text-2xl font-bold text-orange-400 text-center">Parceiros e Reconhecimentos</h2>
+      <p className="text-gray-600 mt-2 text-center">Agradecemos aos nossos parceiros por fortalecerem nossa missão</p>
 
-      <div className="mt-4 grid grid-cols-3 md:grid-cols-6 gap-4 items-center">
+      <div className="mt-4 flex gap-4 items-center w-full justify-center">
         {partners.map((p) => (
           <a
             key={p.name}

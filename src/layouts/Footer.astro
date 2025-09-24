@@ -1,5 +1,71 @@
-<footer class="footer p-5  pb-2 bt-2 bottom-0 border-2 w-full md:text-center">
+---
+import { BsDiscord } from "react-icons/bs";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedin, FaTiktok } from "react-icons/fa6";
+import { IoLogoYoutube } from "react-icons/io";
+---
+
+<footer class="footer p-10 pb-2 bt-2 bottom-0 border-2 w-full md:text-center flex ">
+	<div class="w-full flex flex-col md:flex-row mb-4">
 	<section class="copyriht container text-center">
 		&copy {new Date().getFullYear()} - CDH. Todos os direitos reservados.
 	</section>
+
+	<div class="w-full flex items-center justify-center">
+		     {/* Ícones das redes sociais */}
+          <div class="flex gap-4 text-4xl text-gray-600">
+            <a
+              href="https://www.facebook.com/share/g/16uintnTJE/?mibextid=wwXIfr"
+              target="_blank"
+              class="hover:text-blue-600  transition"
+            >
+              <FaFacebook size={20} className="text-orange-400"/>
+            </a>
+            <a
+              href="https://www.instagram.com/cdh.community/
+"
+              target="_blank"
+              class="hover:text-pink-500 transition"
+            >
+              <FaInstagramSquare size={20} className="text-orange-400"/>
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@cdh.community"
+              target="_blank"
+              class="hover:text-blue-700 transition"
+            >
+              <FaLinkedin size={20} className="text-orange-400"/>
+            </a>
+            <a
+              href="https://www.tiktok.com/@cdh.community"
+              target="_blank"
+              class="hover:text-[#010101] transition"
+            >
+              <FaTiktok size={20} className="text-orange-400"/>
+            </a>
+            <a
+              href="https://github.com/cdh-community-ao"
+              target="_blank"
+              class="hover:text-gray-800 transition"
+            >
+              <FaGithub size={20} className="text-orange-400"/>
+            </a>
+            <a
+              href="https://www.youtube.com/@cdh.community"
+              target="_blank"
+              class="hover:text-red-600 transition"
+            >
+              <IoLogoYoutube size={20} className="text-orange-400"/>
+            </a>
+
+            <a
+              href="https://discord.gg/HH4szPQ5"
+              class="hover:text-[#5865F2] transition"
+            >
+              <BsDiscord size={20} className="text-orange-400"/>
+            </a>
+          </div>
+	</div>
+	</div>
 </footer>

@@ -20,10 +20,15 @@ tags: ["aniversário", "tecnologia", "comunidade", "Huambo", "CDH"]
     <h1 class="text-2xl font-bold text-blue-900 mb-4">🎉 Hoje completamos 1 Ano de CDH!</h1>
     <p class="text-xl"><strong>27 de Julho de 2025</strong> - Celebramos 1 ano de existência da <span class="text-blue-500 font-semibold">CDH – Comunidade de Desenvolvedores do Huambo</span>.</p>
   </div>
+<div class="max-w-4xl mx-auto px-6 py-12 space-y-12 text-gray-800">
+  <!-- Título principal -->
+<div class="max-w-4xl mx-auto px-6 py-12">
+  <article class="prose prose-lg prose-orange prose-headings:text-gray-800 prose-p:text-gray-700 prose-strong:text-gray-900 prose-li:marker:text-orange-500">
+    
+  <p class="text-orange-500 font-semibold">Nossa Origem</p>
 
-## 🔥 Nossa Origem
 A CDH nasceu da inquietação de três jovens visionários:
-> **Adriano Chilundulo, Cirilo Canganjo e Mariano Quessongo**
+**Adriano Chilundulo, Cirilo Canganjo e Mariano Quessongo**
 
 diante da ausência de espaços inclusivos para formação tecnológica e conexão entre talentos digitais. Essa chama se transformou na iniciativa juvenil mais vibrante da província!
 
@@ -35,10 +40,10 @@ Hoje, somos muito mais que um grupo: **somos uma comunidade unida** pelo propós
 
 ## 🎯 Por Que Existimos?
 ### Missão
-• Empoderar jovens através da programação e inovação tecnológica  
-• Conectar talentos locais às empresas e oportunidades  
-• Combater a exclusão digital com acesso e formação  
-• Construir cultura de partilha, disciplina e propósito  
+- Empoderar jovens através da programação e inovação tecnológica  
+- Conectar talentos locais às empresas e oportunidades  
+- Combater a exclusão digital com acesso e formação  
+- Construir cultura de partilha, disciplina e propósito  
 
 ### Visão
 Ser a **ponte entre potencial humano e oportunidades digitais**, transformando o Huambo em polo tecnológico nacional impulsionado por jovens comprometidos.
@@ -47,27 +52,27 @@ Ser a **ponte entre potencial humano e oportunidades digitais**, transformando o
 A CDH é uma máquina organizada e viva, movida por jovens apaixonados:
 
 ### 💻 Departamento de Programação & Suporte Técnico
-_Dá vida às ideias em código_  
-• Desenvolve sistemas, apps e sites  
-• Presta suporte técnico em eventos  
-• Forma nova geração de programadores  
+*Dá vida às ideias em código*  
+- Desenvolve sistemas, apps e sites  
+- Presta suporte técnico em eventos  
+- Forma nova geração de programadores  
 
 ### ✍️ Departamento de Redação & Revisão Textual
-_Forja nossa voz e comunicação_  
+*Forja nossa voz e comunicação*  
 - Redige comunicados e materiais  
 - Revisa conteúdos com precisão  
 - Produz materiais didáticos  
 - Mantém coerência linguística  
 
 ### 📱 Departamento de Social Media & Marketing
-_Conecta e engaja nossa comunidade_  
+*Conecta e engaja nossa comunidade*  
 - Administra redes sociais estratégicas  
 - Cria campanhas impactantes  
 - Promove eventos e conexões  
 - Interage com o público digital  
 
 ### 🎨 Departamento de Design & Imagem
-_Transforma missão em identidade visual_  
+*Transforma missão em identidade visual*  
 - Cria logotipos e identidade visual  
 - Desenvolve materiais gráficos  
 - Produz visuais para redes e eventos  
@@ -77,5 +82,8 @@ _Transforma missão em identidade visual_
 > "Este é apenas o começo. Obrigado a todos que acreditam, contribuem e caminham connosco.  
 > **Juntos, vamos além do código!**"
 
-\#CDH1Ano \#DesenvolvedoresDoHuambo \#TransformaçãoDigital \#JuventudeAtiva  
-\#HuamboTech \#ComunidadeCDH \#AniversárioCDH
+#CDH1Ano #DesenvolvedoresDoHuambo #TransformaçãoDigital #JuventudeAtiva  
+#HuamboTech #ComunidadeCDH #AniversárioCDH
+
+  </article>
+</div>

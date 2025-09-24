@@ -15,21 +15,21 @@ export default function Contatos() {
     
 
   return (
-    <main className="min-h-screen flex flex-col gap-16 bg-gray-50 p-10 flex-wrap">
+    <main className="min-h-screen flex flex-col gap-16 bg-gray-50 md:p-10  flex-wrap w-full justify-center items-center">
       {/* Grid principal */}
-      <section className="grid md:grid-cols-2 gap-10">
+      <section className="flex flex-col gap-10 md:w-[80%] w-full">
         {/* Coluna Esquerda */}
-        <div className="flex flex-col gap-6">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+        <div className="flex w-full flex-col gap-6 p-20 md:p-32 text-center justify-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-orange-400">
             Ainda não achou o que procura?
           </h1>
-          <p className="text-lg text-gray-600">
-            Tem dúvidas ou sugestões? Fale connosco pelo formulário ou através
+          <p className="text-lg text-gray-600 w-full ">
+            <strong className="text-2xl">Tem dúvidas ou sugestões?</strong><br></br> Fale connosco pelo formulário ou através
             dos nossos canais oficiais.
           </p>
 
           {/* Ícones das redes sociais */}
-          <div className="flex gap-4 text-4xl text-gray-600">
+          <div className="flex gap-4 text-center w-full items-center justify-center text-2xl md:text-7xl text-orange-400">
             <a
               href="https://www.facebook.com/share/g/16uintnTJE/?mibextid=wwXIfr"
               target="_blank"
@@ -115,7 +115,7 @@ export default function Contatos() {
 
             <button
               type="submit"              
-              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition cursor-pointer"
+              className="bg-orange-400 hover:bg-orange-500 text-white font-semibold px-6 py-3 rounded-lg transition cursor-pointer"
             >
               Enviar
             </button>
@@ -124,7 +124,7 @@ export default function Contatos() {
       </section>
 
       {/* Mapa Google */}
-      <section className="w-full h-[400px] rounded-xl overflow-hidden shadow-lg">
+      <section className="w-full h-[400px] overflow-hidden shadow-lg">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.5369853288116!2d15.7002041!3d-12.7698859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1bb775b4dbf6dfdb%3A0x43a78822d1399cdb!2sHuambo%2C%20Angola!5e0!3m2!1sen!2sus!4v0000000000000"
           width="100%"
