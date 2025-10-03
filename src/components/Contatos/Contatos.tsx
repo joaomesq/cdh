@@ -13,9 +13,6 @@ import { IoLogoYoutube } from "react-icons/io";
 
 
 export default function Contatos() {
-
-    
-
   return (
     <main className="min-h-screen flex flex-col gap-16 bg-gray-50 md:p-10  flex-wrap w-full justify-center items-center">
       {/* Grid principal */}
@@ -32,8 +29,8 @@ export default function Contatos() {
 
           {/* Ícones das redes sociais */}
           <div className="flex gap-4 text-center w-full items-center justify-center text-2xl md:text-7xl text-orange-400">
-            <a
-              href="https://www.facebook.com/share/g/16uintnTJE/?mibextid=wwXIfr"
+            <a 
+            href="https://www.facebook.com/share/g/16uintnTJE/?mibextid=wwXIfr"
               target="_blank"
               className="hover:text-blue-600 transition"
             >
