@@ -39,24 +39,37 @@ export default function Slider(){
 
     const { imagem, titulo, descricao } = slides[current];
     return (
-        <section className="w-full h-[400px] md:h-[500px] flex items-center flex-col justify-center text-white text-center" style={{ backgroundImage: `url(${imagem})`, backgroundSize: "Cover", backgroundPosition: "center"}}>
+        <>
+        <section className="w-full py-20 md:p-48 h-[700px] md:h-[700px] flex flex-col items-center justify-around text-black" 
+         style={{ backgroundImage: `url(${imagem})`, backgroundSize: "Cover", backgroundPosition: "center"}}
+        >
             {/*escurecendo o fundo*/}
-
+        <main className="flex items-center h-[80%] justify-center  text-black text-center">
             {/*Textos*/}
-            <div className="max-w-xl text-left p-4 py-8 h-[300px]">
-                <h2 className="text-3xl font-bold mb-2">{titulo}</h2>
-                <p className="text-lg mb-4">{descricao}</p>
+            <div className="max-w-4xl p-4 py-3 flex flex-col items-center justify-center">
+                <h2 className="text-5xl text-orange-400 font-bold mb-2">{titulo}</h2>
+                <p className="text-lg text-white mb-4">{descricao}</p>
 
-                {/*Call to action */}
-                <CallAction texto="Junte-se a nós" link="https://www.facebook.com/groups*sdh.community.group/permalink/3980161625462870"/>
             </div>
+       </main>
 
-            {/*Controllers*/}
-            <div className="">
+  <main className="flex items-center h-[5%] justify-center w-full ">
+              {/*Call to action */}
+                <div className="">
                 {slides.map((_, index)=> (
-                    <button key={index} onClick={()=> setCurrent(index)} className={`w-3 h-3 m-2 rounded-full ${current === index ? "bg-white": "bg-gray-400"}`} />
+                    <button key={index} onClick={()=> setCurrent(index)} className={`w-3 h-3 m-2 rounded-full ${current === index ? "bg-orange-600": "bg-orange-200"}`} />
                 ))}
             </div>
+          </main>
+
+      {/*Controllers*/}
+          <main className="flex items-center h-[5%] justify-center mt-10 w-full ">
+              <CallAction 
+                texto="Junte-se a nós" 
+                link="https://www.facebook.com/groups*sdh.community.group/permalink/3980161625462870"/>
+          </main>
+
         </section>
+       </>
     );
 }

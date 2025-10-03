@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function MissaoVisaoValores() {
   return (
-    <section id="missao" className="bg-white rounded-lg shadow-sm p-6">
-      <h2 className="text-2xl font-bold text-center text-cdh-dark">Missão, Visão e Valores</h2>
+    <section id="missao" className="bg-white rounded-lg shadow-sm p-8">
+      <h2 className="text-2xl font-bold text-center text-orange-400">Missão, Visão e Valores</h2>
 
       <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
         <div className="p-4 rounded-lg border-l-4 border-cdh-pink/90 bg-white/50">

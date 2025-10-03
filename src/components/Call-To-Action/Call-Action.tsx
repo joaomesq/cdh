@@ -7,6 +7,6 @@ interface ActionProps{
 
 export default function CallAction({texto, link}: ActionProps){
     return(
-        <a href={`${link}`} className="text-white text-sm mb-2 rounded bg-call-action p-1 font-samll">{texto}</a>
+        <a href={`${link}`} className="text-white text-sm mb-2 p-3 px-6 rounded bg-call-action font-samll">{texto}</a>
     );
 }
