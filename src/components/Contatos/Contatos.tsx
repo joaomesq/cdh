@@ -3,6 +3,8 @@ import {
   FaGithub,
   FaTiktok,
   FaFacebook,
+  FaFacebookSquare,
+  FaGithubSquare,
   FaInstagramSquare,
 } from "react-icons/fa";
 import { BsDiscord } from "react-icons/bs";
