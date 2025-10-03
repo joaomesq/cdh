@@ -1,19 +1,8 @@
-import { FaLinkedin } from "react-icons/fa6";
-import {
-  FaGithub,
-  FaTiktok,
-  FaFacebook,
-  FaInstagramSquare,
-} from "react-icons/fa";
-import { BsDiscord } from "react-icons/bs";
-import { IoLogoYoutube } from "react-icons/io";
-
-
+import ContatoInfo from "./ContatoInfo";
+import ContatoForm from "./ContatoForm";
+import ContatoMap from "./ContatosMap";
 
 export default function Contatos() {
-
-    
-
   return (
     <main className="min-h-screen flex flex-col gap-16 bg-gray-50 md:p-10  flex-wrap w-full justify-center items-center">
       {/* Grid principal */}
