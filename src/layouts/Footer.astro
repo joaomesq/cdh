@@ -7,7 +7,7 @@ import { MdPhone, MdEmail, MdPlace } from "react-icons/md";
 import Logo from "../components/Logo/Logo.astro";
 ---
 
-<footer class="footer p-4 bg-cdh-dark text-white w-full flex flex-col md:flex-row">
+<footer class="footer p-4 bg-cdh-dark text-white w-full md:grid md:grid-cols-[2fr_1fr_1fr] gap-4">
 	<section class="cdh">
     <div>
       <Logo />
@@ -80,7 +80,7 @@ import Logo from "../components/Logo/Logo.astro";
     </ul>
   </section>
 
-  <section class="copyriht mt-6 border-t border-white/10 pt-4 text-xs opacity-70">
+  <section class="copyriht col-span-3 mt-6 border-t border-white/10 pt-4 text-xs opacity-70">
     <p class="font-md text-center">&copy {new Date().getFullYear()} Comunidade de Desenvolvedores do Huambo. Todos os direitos reservados.</p>
 	</section>
 </footer>
