@@ -1,39 +1,50 @@
 ---
-// BlogCard.astro
 const { data, slug } = Astro.props;
 ---
 
-<li class="article-card bg-white dark:bg-dark-800 rounded-2xl shadow-md overflow-hidden transition-transform hover:-translate-y-1 duration-300">
+<li class="article-card h-full flex flex-col bg-white dark:bg-dark-800 rounded-2xl shadow-md overflow-hidden transition-transform hover:-translate-y-1 duration-300">
+  <!-- topo -->
   <div class="relative">
-    <div class="h-40 bg-gradient-to-r from-blue-500 to-purple-600"></div>
-    <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+    <div class="h-20 bg-gradient-to-r from-[#E5A862] to-orange-200"></div>
+    <div class="absolute top-4 right-4 bg-[#E5A862] text-white px-3 py-1 rounded-full text-sm font-medium">
       {data.tags?.[0] || "Blog"}
     </div>
   </div>
 
-  <div class="p-6">
-    <div class="flex justify-between items-center mb-3 text-sm text-gray-500 dark:text-gray-400">
-      <span>{data.pubDate.toLocaleDateString("pt-PT", { day: "numeric", month: "short", year: "numeric" })}</span>
+  <!-- conteúdo que expande -->
+  <div class="p-6 flex-grow">
+    <div class="flex justify-between items-center mb-3 text-sm text-[#E5A862] dark:text-orange-300">
+      <span>
+        {data.pubDate.toLocaleDateString("pt-PT", { day: "numeric", month: "short", year: "numeric" })}
+      </span>
       <span><i class="far fa-clock mr-1"></i> 5 min</span>
     </div>
 
-    <h1 class="text-x1 font-bold text-gray-900 dark:text-blue mb-2">{data.title}</h1>
+    <h1 class="text-xl font-bold text-[#E5A862] dark:text-orange-400 mb-2 text-center ">
+      {data.title}
+    </h1>
 
-    <p class="text-gray-600 dark:text-gray-600 mb-4">{data.description}</p>
+    <p class="text-gray-700 dark:text-orange-200 mb-4">
+      {data.description}
+    </p>
 
     <div class="flex items-center">
       <div class="w-8 h-8 rounded-full bg-gray-200 dark:bg-gray-700 mr-3"></div>
-      <span class="text-gray-700 dark:text-gray-300 font-medium">{data.author}</span>
+      <span class="text-orange-700 dark:text-[#E5A862] font-medium">
+        {data.author}
+      </span>
     </div>
   </div>
 
-  <div class="px-6 py-4 bg-gray-50 dark:bg-dark-700">
+  <!-- footer fixo no rodapé do card -->
+  <div class="px-6 py-4 bg-gray-50 dark:bg-gray-800">
     <button 
-      class="text-blue-600 dark:text-blue-400 font-medium w-full text-left flex justify-between items-center"
+      class="text-[#E5A862] dark:text-orange-300 font-medium w-full text-left flex justify-between items-center hover:text-orange-600 transition-colors"
       onclick={`openModal("${slug}")`}
+      aria-label={`Ler artigo ${data.title}`}
     >
       Ler artigo completo
-      <i class="fas fa-arrow-right"></i>
+      <i class="fas fa-arrow-right" aria-hidden="true"></i>
     </button>
   </div>
 </li>
