@@ -33,7 +33,7 @@ export default function Slider(){
     useEffect(()=> {
         const interval = setInterval(() => {
             setCurrent((prev) => (prev +1) % slides.length);
-        }, 3500);
+        }, 4500);
         
         return () => clearInterval(interval);
     }, []);
@@ -46,15 +46,15 @@ export default function Slider(){
             <div className="absolute inset-0 bg-white bg-opacity-10"></div>
             
             <div className="relative z-10">
-                <div className="flex items-center justify-center text-center">
+                <div className="flex items-center justify-center text-center mt-6">
                     {/*Textos*/}
-                    <div className="max-w-4xl p-4 py-3 flex flex-col items-center justify-center">
-                        <h2 className="text-5xl font-bold mb-4 mt-12">{titulo}</h2>
-                        <p className="text-lg text-gray-300 mb-4 mt-4">{descricao}</p>
+                    <div className="max-w-4xl p-3 py-3 flex flex-col items-center justify-center">
+                        <h2 className="text-4xl font-bold mb-4 mt-4">{titulo}</h2>
+                        <p className="text-lg text-gray-400 mb-4">{descricao}</p>
                     </div>
                 </div>
 
-                <div className="flex items-center justify-center w-full ">
+                <div className="flex items-center justify-center w-full mb-2">
                     {/*Controllers*/}
                     <div>
                         {slides.map((_, index)=> (
@@ -63,7 +63,7 @@ export default function Slider(){
                     </div>
                 </div>
 
-                <div className="flex items-center mb-4 h-[5%] justify-center mt-10 w-full ">
+                <div className="flex items-center mb-4 h-[5%] justify-center w-full ">
                     <CallAction texto="Junte-se a nós" link="https://www.facebook.com/groups*sdh.community.group/permalink/3980161625462870"/>
                 </div>
             </div>
