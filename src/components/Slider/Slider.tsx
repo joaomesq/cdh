@@ -11,18 +11,18 @@ interface Slide{
 const slides: Slide[] = [
     {
         imagem: "/img/2.jpg",
-        titulo: "CDH - Comunidade de desenvolvimento do Huambo",
-        descricao: "Somos a maior comunidade de programadores e codificadores da cidade do Huambo, Angoa. Na CDH, acredita-se no poder da colaboração e do compatilhamento de conhecimento"
+        titulo: "Comunidade de desenvolvimento do Huambo",
+        descricao: "Promovendo o desenvolvendo tecnológico e a inovação em Angola através da colaboração entre desenvolvedores, capacitação e partilha de conhecimento."
     },
     {
         imagem: "/img/2.jpg",
-        titulo: "CONECTANDO MENTES, DESENVOLVENDO SOLUÇÕES",
-        descricao: "Muito mais que um grupo: somos uma comunidade unida pelo propósito de aprender, ensinar,impactar e criar soluções para problemas reais"
+        titulo: "Conectando mentes, Desenvolvendo soluçoões através da tecnologia.",
+        descricao: "Unidos pela paixão em tecnologia, criamos um ambiente onde o conhecimento flue livremente e cada membro contribui para o crescimento coletivo da nossa comunidade."
     },
     {
         imagem: "/img/2.jpg",
-        titulo: "HUAMBO NO MAPA!",
-        descricao: "Juntos vamos elevar o nível da tecnologia na nossa região, colocando o Huambo e Angola no mapa."
+        titulo: "Huambo no mapa!",
+        descricao: "Trabalhamos para posicionar Haumbo e Angola como referência em inovação tecnológica, desenvolvendo soluções que transformam vidas e impulsionam o progresso nacional."
     },
 ]; 
 
@@ -49,7 +49,7 @@ export default function Slider(){
                 <div className="flex items-center justify-center text-center">
                     {/*Textos*/}
                     <div className="max-w-4xl p-4 py-3 flex flex-col items-center justify-center">
-                        <h2 className="text-4xl font-bold mb-4 mt-12">{titulo}</h2>
+                        <h2 className="text-5xl font-bold mb-4 mt-12">{titulo}</h2>
                         <p className="text-lg text-gray-300 mb-4 mt-4">{descricao}</p>
                     </div>
                 </div>
