@@ -33,7 +33,7 @@ export default function Slider(){
     useEffect(()=> {
         const interval = setInterval(() => {
             setCurrent((prev) => (prev +1) % slides.length);
-        }, 2500);
+        }, 3500);
         
         return () => clearInterval(interval);
     }, []);
@@ -43,14 +43,14 @@ export default function Slider(){
     return (
         <section className="relative w-full h-[500px] py-6" style={{ backgroundImage: `url(${imagem})`, backgroundSize: "Cover", backgroundPosition: "center"}}>         
             {/*Escurecendot o fundo */}
-            <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+            <div className="absolute inset-0 bg-white bg-opacity-10"></div>
             
             <div className="relative z-10">
-                <div className="flex items-center h-[80%] justify-center text-black text-center">
+                <div className="flex items-center justify-center text-center">
                     {/*Textos*/}
                     <div className="max-w-4xl p-4 py-3 flex flex-col items-center justify-center">
-                        <h2 className="text-5xl text-orange-400 font-bold mb-2">{titulo}</h2>
-                        <p className="text-lg text-white mb-4">{descricao}</p>
+                        <h2 className="text-4xl font-bold mb-4 mt-12">{titulo}</h2>
+                        <p className="text-lg text-gray-300 mb-4 mt-4">{descricao}</p>
                     </div>
                 </div>
 
@@ -66,7 +66,6 @@ export default function Slider(){
                 <div className="flex items-center mb-4 h-[5%] justify-center mt-10 w-full ">
                     <CallAction texto="Junte-se a nós" link="https://www.facebook.com/groups*sdh.community.group/permalink/3980161625462870"/>
                 </div>
-
             </div>
         </section>
     );
