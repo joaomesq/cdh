@@ -63,7 +63,7 @@ export default function Slider(){
                     </div>
                 </div>
 
-                <div className="flex items-center mb-4 h-[5%] justify-center w-full ">
+                <div className="flex items-center mb-4 h-[5%] justify-center w-full px-4">
                     <CallAction texto="Junte-se a nós" link="https://www.facebook.com/groups*sdh.community.group/permalink/3980161625462870"/>
                 </div>
             </div>

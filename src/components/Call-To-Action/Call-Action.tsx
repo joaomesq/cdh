@@ -3,10 +3,11 @@ import React from "react";
 interface ActionProps{
     texto: string;
     link: string;
+    background: string;
 }
 
-export default function CallAction({texto, link}: ActionProps){
+export default function CallAction({texto, link, background = ''}: ActionProps){
     return(
-        <a href={`${link}`} className="text-white text-sm mb-2 p-3 px-6 rounded bg-call-action font-samll">{texto}</a>
+        <a href={`${link}`} target="_blank" className={`text-white text-center mb-2 p-2 px-6 rounded ${background !== ''? background: "bg-call-action"} font-samll w-full`}>{texto}</a>
     );
 }
