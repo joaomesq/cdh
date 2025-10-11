@@ -41,9 +41,9 @@ export default function Slider(){
     const { imagem, titulo, descricao } = slides[current];
     
     return (
-        <section className="relative w-full h-[500px] py-6" style={{ backgroundImage: `url(${imagem})`, backgroundSize: "Cover", backgroundPosition: "center"}}>         
+        <section className="relative w-full h-[700px] py-6" style={{ backgroundImage: `url(${imagem})`, backgroundSize: "Cover", backgroundPosition: "center"}}>         
             {/*Escurecendot o fundo */}
-            <div className="absolute inset-0 bg-white bg-opacity-10"></div>
+            <div className="absolute inset-0 bg-white bg-opacity-20"></div>
             
             <div className="relative z-10">
                 <div className="flex items-center justify-center text-center mt-6">
@@ -63,7 +63,7 @@ export default function Slider(){
                     </div>
                 </div>
 
-                <div className="mb-4 h-[5%] w-full flex flex-col items-center gap-2 px-4 lg:flex-row lg:w-1/2 lg:mx-auto lg:mt-8 lg:gap-4">
+                <div className="mb-4 h-[5%] w-full flex flex-col items-center gap-2 px-4 md:flex-row md:w-1/2 md:mx-auto md:mt-8 md:gap-4">
                     <CallAction target="_self" texto="Conhecer a CDH  ->" link="/quem-somos" background="bg-cdh-blue"/>
                     <CallAction texto="Junte-se a nós" link="https://www.facebook.com/groups*sdh.community.group/permalink/3980161625462870"/>
                 </div>
