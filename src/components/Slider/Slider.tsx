@@ -15,7 +15,7 @@ const slides: Slide[] = [
         descricao: "Promovendo o desenvolvendo tecnológico e a inovação em Angola através da colaboração entre desenvolvedores, capacitação e partilha de conhecimento."
     },
     {
-        imagem: "/img/4.jpg",
+        imagem: "/img/3.jpg",
         titulo: "Conectando mentes, Desenvolvendo soluçoões através da tecnologia.",
         descricao: "Unidos pela paixão em tecnologia, criamos um ambiente onde o conhecimento flue livremente e cada membro contribui para o crescimento coletivo da nossa comunidade."
     },
