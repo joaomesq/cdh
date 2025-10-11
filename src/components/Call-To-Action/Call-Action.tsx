@@ -4,10 +4,11 @@ interface ActionProps{
     texto: string;
     link: string;
     background: string;
+    target: string;
 }
 
-export default function CallAction({texto, link, background = ''}: ActionProps){
+export default function CallAction({texto, link, background = '', target = '_blank'}: ActionProps){
     return(
-        <a href={`${link}`} target="_blank" className={`text-white text-center mb-2 p-2 px-6 rounded ${background !== ''? background: "bg-call-action"} font-samll w-full`}>{texto}</a>
+        <a href={`${link}`} target={`${target}`} className={`text-white text-center mb-2 p-2 px-6 rounded-lg ${background !== ''? background: "bg-call-action"} font-samll w-full`}>{texto}</a>
     );
 }
