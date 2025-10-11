@@ -41,7 +41,7 @@ export default function Slider(){
     const { imagem, titulo, descricao } = slides[current];
     
     return (
-        <section className="relative w-full h-[700px] py-6" style={{ backgroundImage: `url(${imagem})`, backgroundSize: "Cover", backgroundPosition: "center"}}>         
+        <section className="relative w-full h-[600px] py-6" style={{ backgroundImage: `url(${imagem})`, backgroundSize: "Cover", backgroundPosition: "center"}}>         
             {/*Escurecendot o fundo */}
             <div className="absolute inset-0 bg-white bg-opacity-20"></div>
             
