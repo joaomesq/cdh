@@ -63,7 +63,8 @@ export default function Slider(){
                     </div>
                 </div>
 
-                <div className="flex items-center mb-4 h-[5%] justify-center w-full px-4">
+                <div className="grid grid-cols-1 gap-3 items-center mb-4 h-[5%] justify-center w-full px-4">
+                    <CallAction texto="Conhecer a CDH  ->" link="/quem-somos" background="bg-cdh-blue"/>
                     <CallAction texto="Junte-se a nós" link="https://www.facebook.com/groups*sdh.community.group/permalink/3980161625462870"/>
                 </div>
             </div>
