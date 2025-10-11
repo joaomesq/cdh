@@ -8,5 +8,41 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-    <Slider client:load/>
+    <section class="slide">
+	    <Slider client:load/>
+	</section>
+
+	<section class="fazer-parte p-4 py-6 text-center mt-12 mb-8">
+	    <div class="md:w-1/2 md:mx-auto">
+		    <h2 class="font-bold mb-4 text-3xl text-gray-700">Por que fazer parte da CDH?</h2>
+			<p class="text-gray-400 text-xl">A CDH ofere um ambiente colaborativo para desenvolvedores crescerem profissionalmente e contribuírem para o exossitema tecnológico angolano.</p>
+		</div>
+
+		<div class="cards-motivos mt-16 md:grid md:grid-cols-4 md:px-8 gap-4">
+		    <Card titulo="Networking" background="bg-white" descricao="Conect-se com outros desenvolvedores, partilhe conhecimento e crie oportunidades de colaboração."/>
+		    <Card titulo="Desenvolvimento Prático" descricao="Partice em projetos reais e desenvolva habilidades através de experiência práticas e colaborativos."/>
+			<Card titulo="Inovação" descricao="Trabalhe em soluções inovadoras que impactem positivamente a comunidade anoglana." background="bg-white"/>
+		    <Card titulo="Impacto Social" descricao="Contribua para projetos que geram impacto positivo na sociedade angolana através da tecnologia."
+		</div>
+	</section>
+
+	<section class="resumo bg-cdh-teal bg-opcity-40 p-4 py-16 text-center">
+	    <h2 class="font-bold text-3xl text-gray-700">Sobre a CDH</h2>
+		<p class="md:w-1/2 md:mx-auto text-gray-300 text-lg mt-8 mb-8">Surgimos pela iniciativa de reunir toda uma comunidade de profissionais, entusiastas e simpatizantes das TI's e Comunicação da cidade, visando alargar o nível de exposição dos talentos locais no uso e produção de soluções tecnológicas emergentes...</p>
+		<CallAction link="/quem-somos" texto="Ver mais ->" target="_self" background="bg-gray-700"/>
+	</section>
+
+	<section class="atuacao p-4">
+	    <div class="text-center mt-12 mb-8">
+		    <h2 class="text-3xl font-bold mb-4 text-gray-700">Áreas de Atuação</h2>
+			<p class="text-gray-400 text-xl">Conheça os nossos principais focos de trabalho e como contribuímos para o desenvolvimento tecnológico</p>
+		</div>
+
+		<div class="cards mt-16 md:grid md:grid-cols-4 md:px-8 gap-4">
+		    <Card titulo="Formação e Mentorias" descricao="Capacitação técnica e orientação profissional para desenvolvedores em diferentes níveis."/>
+			<Card titulo="Hackathons e Eventos" descricao="Organização de eventos que promovem a inovação e o networking entre profissionais."/>
+			<Card titulo="Projetos Comunitários" descricao="Desenvolvimento de soluções tecnológicas que beneficiam a comunidade local."/>
+			<Card titulo="Parcerias" descricao="Colaboração estratégicas com empresas e instituições para ampliar oportunidades."/>
+		</div>
+	</section>
 </Layout>
