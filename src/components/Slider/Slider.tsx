@@ -46,7 +46,7 @@ export default function Slider(){
             <div className="absolute inset-0 bg-white bg-opacity-10"></div>
             
             <div className="relative z-10">
-                <div className="flex items-center justify-center text-center mt-6">
+                <div className="flex items-center justify-center text-center mt-4">
                     {/*Textos*/}
                     <div className="max-w-4xl p-3 py-3 flex flex-col items-center justify-center">
                         <h2 className="text-4xl font-bold mb-4 mt-4">{titulo}</h2>
