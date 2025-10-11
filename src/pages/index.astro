@@ -31,4 +31,18 @@ import Layout from '../layouts/Layout.astro';
 		<p class="md:w-1/2 md:mx-auto text-gray-300 text-lg mt-8 mb-8">Surgimos pela iniciativa de reunir toda uma comunidade de profissionais, entusiastas e simpatizantes das TI's e Comunicação da cidade, visando alargar o nível de exposição dos talentos locais no uso e produção de soluções tecnológicas emergentes...</p>
 		<CallAction link="/quem-somos" texto="Ver mais ->" target="_self" background="bg-gray-700"/>
 	</section>
+
+	<section class="atuacao p-4">
+	    <div class="text-center mt-12 mb-8">
+		    <h2 class="text-3xl font-bold mb-4 text-gray-700">Áreas de Atuação</h2>
+			<p class="text-gray-400 text-xl">Conheça os nossos principais focos de trabalho e como contribuímos para o desenvolvimento tecnológico</p>
+		</div>
+
+		<div class="cards mt-16 md:grid md:grid-cols-4 md:px-8 gap-4">
+		    <Card titulo="Formação e Mentorias" descricao="Capacitação técnica e orientação profissional para desenvolvedores em diferentes níveis."/>
+			<Card titulo="Hackathons e Eventos" descricao="Organização de eventos que promovem a inovação e o networking entre profissionais."/>
+			<Card titulo="Projetos Comunitários" descricao="Desenvolvimento de soluções tecnológicas que beneficiam a comunidade local."/>
+			<Card titulo="Parcerias" descricao="Colaboração estratégicas com empresas e instituições para ampliar oportunidades."/>
+		</div>
+	</section>
 </Layout>
