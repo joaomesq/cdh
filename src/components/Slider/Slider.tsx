@@ -10,17 +10,17 @@ interface Slide{
 
 const slides: Slide[] = [
     {
-        imagem: "/img/3.jpg",
+        imagem: "/img/4.jpg",
         titulo: "Comunidade de desenvolvimento do Huambo",
         descricao: "Promovendo o desenvolvendo tecnológico e a inovação em Angola através da colaboração entre desenvolvedores, capacitação e partilha de conhecimento."
     },
     {
-        imagem: "/img/3.jpg",
+        imagem: "/img/4.jpg",
         titulo: "Conectando mentes, Desenvolvendo soluçoões através da tecnologia.",
         descricao: "Unidos pela paixão em tecnologia, criamos um ambiente onde o conhecimento flue livremente e cada membro contribui para o crescimento coletivo da nossa comunidade."
     },
     {
-        imagem: "/img/3.jpg",
+        imagem: "/img/4.jpg",
         titulo: "Huambo no mapa!",
         descricao: "Trabalhamos para posicionar Haumbo e Angola como referência em inovação tecnológica, desenvolvendo soluções que transformam vidas e impulsionam o progresso nacional."
     },
