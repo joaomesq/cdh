@@ -1,9 +1,12 @@
 ---
 import Quem_Somos from '../components/Quem-Somos/Quem_Somos.astro';
 import Layout from '../layouts/Layout.astro';
-
+import Hero from '../components/Hero/Hero.astro';
 ---
 
-<Layout title="Integração React | CDH">
+<Layout>
+  <section class="hero">
+      <Hero titulo="Quem Somos" descricao="A Comunidade de Desenvolvedores do Huambo é uma organização sem fins lucrativos dedicada ao crescimento e desenvolvimento do sector tecnológico no Huambo e Angola."/>
+  </section>
   <Quem_Somos />
 </Layout>
