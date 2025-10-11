@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero/Hero.astro';
 import NossaHistoria from '../components/Quem-Somos/NossaHistoria.jsx';
 import MissaoVisaoValores from '../components/Quem-Somos/MissaoVisaoValores.jsx';
+import OqueFazemos from '../components/Quem-Somos/OqueFazemos/OqueFazemos.astro';
 ---
 
 <Layout>
@@ -11,11 +12,15 @@ import MissaoVisaoValores from '../components/Quem-Somos/MissaoVisaoValores.jsx'
     <Hero titulo="Quem Somos" descricao="A Comunidade de Desenvolvedores do Huambo é uma organização sem fins lucrativos dedicada ao crescimento e desenvolvimento do sector tecnológico no Huambo e Angola."/>
   </section>
   
-  <section class="historia">
+  <section class="historia bg-cdh-dark bg-opacity-5">
     <NossaHistoria />
   </section>
 
-  <section class="missao-visao-valores bg-cdh-dark bg-opacity-10">
+  <section class="missao-visao-valores">
     <MissaoVisaoValores />
+  </section>
+  
+  <section class="oque-fazemos bg-cdh-dark bg-opacity-5 p-4">
+    <OqueFazemos />
   </section>
 </Layout>
