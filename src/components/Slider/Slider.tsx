@@ -43,13 +43,13 @@ export default function Slider(){
     return (
         <section className="relative w-full h-[700px] py-6 flex flex-col items-center justify-center" style={{ backgroundImage: `url(${imagem})`, backgroundSize: "Cover", backgroundPosition: "left"}}>         
             {/*Escurecendot o fundo */}
-            <div className="absolute inset-0 bg-black bg-opacity-65"></div>
+            <div className="absolute inset-0 bg-black bg-opacity-40"></div>
             
             <div className="relative z-10">
                 <div className="md:w-1/2">
                     {/*Textos*/}
                     <div className="p-3">
-                        <h2 className="text-4xl md:text-6xl font-bold mb-4 mt-4">{titulo}</h2>
+                        <h2 className="text-4xl text-gray-700 md:text-6xl font-bold mb-4 mt-4">{titulo}</h2>
                         <p className="text-2xl text-gray-100 mb-4">{descricao}</p>
                     </div>
                 </div>
