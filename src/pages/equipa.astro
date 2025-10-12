@@ -1,8 +1,8 @@
 ---
 //componente
 import Layout from '../layouts/Layout.astro';
-import Equipa from '../components/Equipa/Equipa';
 import Hero from '../components/Hero/Hero.astro';
+import Departamento from '../components/Departamento/Departamento.tsx';
 ---
 
 <Layout>
@@ -15,5 +15,9 @@ import Hero from '../components/Hero/Hero.astro';
       <h2 class="text-3xl font-bold text-gray-700 mb-4">Nossos Departamentos</h2>
       <p class="text-xl text-gray-400 md:w-1/2 md:mx-auto">Cada departamento da CDH espcializa-se numa área específica da tecnologia, colaborando para criar soluções completas e inovadoras.</p>
     </div>
+  </section>
+
+  <section class="departamentos">
+    <Departamento />
   </section>
 </Layout>
