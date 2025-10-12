@@ -10,17 +10,17 @@ interface Slide{
 
 const slides: Slide[] = [
     {
-        imagem: "/img/4.jpg",
+        imagem: "/img/5.jpg",
         titulo: "Comunidade de desenvolvimento do Huambo",
         descricao: "Promovendo o desenvolvendo tecnológico e a inovação em Angola através da colaboração entre desenvolvedores, capacitação e partilha de conhecimento."
     },
     {
-        imagem: "/img/4.jpg",
+        imagem: "/img/5.jpg",
         titulo: "Conectando mentes, Desenvolvendo soluçoões através da tecnologia.",
         descricao: "Unidos pela paixão em tecnologia, criamos um ambiente onde o conhecimento flue livremente e cada membro contribui para o crescimento coletivo da nossa comunidade."
     },
     {
-        imagem: "/img/4.jpg",
+        imagem: "/img/5.jpg",
         titulo: "Huambo no mapa!",
         descricao: "Trabalhamos para posicionar Haumbo e Angola como referência em inovação tecnológica, desenvolvendo soluções que transformam vidas e impulsionam o progresso nacional."
     },
@@ -41,16 +41,16 @@ export default function Slider(){
     const { imagem, titulo, descricao } = slides[current];
     
     return (
-        <section className="relative w-full h-[600px] py-6 flex flex-col items-center justify-center" style={{ backgroundImage: `url(${imagem})`, backgroundSize: "Cover", backgroundPosition: "left"}}>         
+        <section className="relative w-full h-[700px] py-6 flex flex-col items-center justify-center" style={{ backgroundImage: `url(${imagem})`, backgroundSize: "Cover", backgroundPosition: "left"}}>         
             {/*Escurecendot o fundo */}
-            <div className="absolute inset-0 bg-white bg-opacity-20"></div>
+            <div className="absolute inset-0 bg-black bg-opacity-65"></div>
             
             <div className="relative z-10">
                 <div className="md:w-1/2">
                     {/*Textos*/}
                     <div className="p-3">
                         <h2 className="text-4xl md:text-6xl font-bold mb-4 mt-4">{titulo}</h2>
-                        <p className="text-2xl text-gray-400 mb-4">{descricao}</p>
+                        <p className="text-2xl text-gray-100 mb-4">{descricao}</p>
                     </div>
                 </div>
 
