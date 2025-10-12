@@ -17,8 +17,8 @@
         'cdh-blue': '#3498C6',
         'cdh-purple': '#6F57A6',
         'cdh-dark': '#4A4A4A',
-      },
+            },
         },
     },
     plugins: [],
- }
+}
