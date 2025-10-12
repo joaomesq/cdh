@@ -7,18 +7,20 @@ import Departamento from '../components/Departamento/Departamento.tsx';
 
 <Layout>
   <section class="hero">
-    <Hero titulo="Nossa Equipa" descricao="Conheça os departamentos que formam a espinha dorsal da CDH e os talentosos profissionais que os lideram."/>
+    <Hero titulo="Nossa Equipa" descricao="A CDH é uma estrutura organizada e viva, formada por jovens apaixonados por inovação, educação e inclusão. Por trás de cada projeto, iniciativa e evento, está uma força viva, em vários departamentos, que sob unidade de propósito faz tudo acontecer."/>
   </section>
   
   <section class="departamentos p-4">
-    <div class="text-center mt-8">
+    <div class="text-center mt-12">
       <h2 class="text-3xl font-bold text-gray-700 mb-4">Nossos Departamentos</h2>
       <p class="text-xl text-gray-400 md:w-1/2 md:mx-auto">Cada departamento da CDH espcializa-se numa área específica da tecnologia, colaborando para criar soluções completas e inovadoras.</p>
     </div>
   </section>
 
-  <section class="departamentos p-4">
-    <Departamento titulo="DevOps" descricao="Automação, integração contínua e gestão de infraestruturas cloud." membros="12" colorBorder="cdh-pink"/>
-    <Departamento titulo="DevOps" descricao="Automação, integração contínua e gestão de infraestruturas cloud." membros="12" colorBorder="cdh-blue"/>
+  <section class="departamentos mt-12 p-4 grid gap-6 grid-cols-1 md:grid-cols-2 mb-8 md:px-12">
+    <Departamento titulo="Departamento de Programação & Suporte Técnico" descricao="Responsavél por desenvolver sistemas, apps e sites da comunidade. Presta suporte técnico aos eventos e forma novos programadores. É aqui que as ideias ganham vida em forma de código." membros=7 colorBorder="cdh-blue"/>
+    <Departamento titulo="Departamento de Redação & Revisão Textual" descricao="Responsável por cuidadr da clareza e força da nossa comunicação. Redige comunicados, revisa materiais, apoia na produção de conteúdos didáticos e mantém a coerência da linguagem da CDH." membros=4 colorBorder="cdh-purple"/>
+    <Departamento titulo="Departamento de Social Media & Marketing" descricao="Responsável pela presença digital da CDH gerenciando à imagem e comunicação com criatividade e estratégia. Administra as redes sociais, cria campanhas, promove eventos enos conduz a interagir com o público." membros=5 colorBorder="cdh-pink"/>
+    <Departamento titulo="Departamento de Design & Imagem" descricao="Responsável por toda a identidade visual da CDH. Cria logotipos, materiais gráficos, visuais para redes e eventos. Traduz a missão da comunidade em arte e impacto visual." membros=4 colorBorder="cdh-orange"/>
   </section>
 </Layout>
