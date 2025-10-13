@@ -20,7 +20,7 @@ export default function Newsletter({email}: NewsletterProps){
                     {/**Mensagem de sucesso */}
                     <input type="hidden" name="_subject" value="Obrigado por entrar em contato!"/>
                     {/**Rediredcionamento */}
-                    <input type="hideen" name="_next" value="https://cdh-psi.vercel.app"/>
+                    <input type="hidden" name="_next" value="https://cdh-psi.vercel.app"/>
                 </form>
 
                 <p className='text-xs mt-4 text-gray-300'>Prometemos não enviar spam!</p>

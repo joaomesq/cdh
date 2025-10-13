@@ -17,7 +17,7 @@ export default function ContatoForm() {
         {/**Mensagem de sucesso */}
         <input type="hidden" name="_subject" value="Obrigado por entrar em contato!"/>
         {/**Rediredcionamento */}
-        <input type="hideen" name="_next" value="https://cdh-psi.vercel.app"/>
+        <input type="hidden" name="_next" value="https://cdh-psi.vercel.app"/>
        </form>
     </section>
   );
