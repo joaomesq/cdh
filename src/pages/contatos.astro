@@ -3,10 +3,15 @@
 import Layout from '../layouts/Layout.astro';
 import Contatos from '../components/Contatos/Contatos';
 import ContatoForm from '../components/Contatos/ContatoForm.tsx';
+import ContatoInfo from '../components/Contatos/ContatoInfo.tsx';
 ---
 
 <Layout>
   <section class="p-4">
+    <div class="info mb-12">
+      <ContatoInfo />
+    </div>
+
     <div class="form mb-6">
       <ContatoForm />
     </div>

@@ -1,6 +1,6 @@
 export default function ContatoForm() {
   return (
-    <section className="bg-white shadow-lg rounded-xl p-8">
+    <section className="bg-white shadow-lg rounded-xl p-8 border">
       <h2 className="text-2xl font-semibold text-gray-800 mb-4">Envie sua mensagem</h2>
           
       <form action={`https://formsubmit.co/cdh.community.ao@outlook.com`} method="POST" className="flex flex-col spacing-y-6 gap-3 h-300">
