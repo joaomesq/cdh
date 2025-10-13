@@ -11,7 +11,7 @@ interface Slide{
 const slides: Slide[] = [
     {
         imagem: "/img/5.jpg",
-        titulo: "Comunidade de desenvolvedores do Huambo",
+        titulo: "Comunidade de Desenvolvedores do Huambo",
         descricao: "Promovendo o desenvolvendo tecnológico e a inovação em Angola através da colaboração entre desenvolvedores, capacitação e partilha de conhecimento."
     },
     {
