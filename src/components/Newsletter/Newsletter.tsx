@@ -16,6 +16,11 @@ export default function Newsletter({email}: NewsletterProps){
                 <form action={`https://formsubmit.co/${email}`} method='POST' className='flex flex-col sm:flex-row items-center gap-2'>
                     <input type='email' name='email' placeholder='Digite o seu e-mail' required className='flex-1 px-2 py-3 border rounded-lg w-full'/>
                     <button type='submit' className='bg-cdh-orange mt-2 text-white font-semibold p-3 rounded-lg hover:bg-blue-700 transition w-full sm:w-auto'>Inscrever-se</button>
+                    
+                    {/**Mensagem de sucesso */}
+                    <input type="hidden" name="_subject" value="Obrigado por entrar em contato!"/>
+                    {/**Rediredcionamento */}
+                    <input type="hideen" name="_next" value="https://cdh-psi.vercel.app"/>
                 </form>
 
                 <p className='text-xs mt-4 text-gray-300'>Prometemos não enviar spam!</p>
