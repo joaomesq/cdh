@@ -46,10 +46,10 @@ export default function Slider(){
             <div className="absolute inset-0 bg-black bg-opacity-40"></div>
             
             <div className="relative z-10">
-                <div className="md:w-1/2">
+                <div className="lg:w-1/2">
                     {/*Textos*/}
                     <div className="p-3">
-                        <h2 className="text-4xl text-gray-700 md:text-6xl font-bold mb-4 mt-4">{titulo}</h2>
+                        <h2 className="text-4xl text-gray-700 lg:text-6xl font-bold mb-4 mt-4">{titulo}</h2>
                         <p className="text-2xl text-gray-100 mb-4">{descricao}</p>
                     </div>
                 </div>
@@ -63,7 +63,7 @@ export default function Slider(){
                     </div>
                 </div>
 
-                <div className="mb-4 h-[5%] w-full flex flex-col items-center gap-2 px-4 md:flex-row md:w-1/3 md:mt-8 md:gap-4">
+                <div className="mb-4 h-[5%] w-full flex flex-col items-center gap-2 px-4 md:flex-row md:w-1/2 md:mt-8 lg:gap-4">
                     <CallAction target="_self" texto="Conhecer a CDH  ->" link="/quem-somos" background="bg-cdh-blue"/>
                     <CallAction background="bg-call-action" target="_blank" texto="Junte-se a nós" link="https://www.facebook.com/groups*sdh.community.group/permalink/3980161625462870"/>
                 </div>
