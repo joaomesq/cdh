@@ -2,7 +2,11 @@
 const {titulo, descricao} = Astro.props;
 ---
 
-<section class="w-full bg-cdh-blue h-[350px] p-12 flex gap-4 items-center justify-center flex-col text-center text-white">
-    <h2 class="text-4xl font-bold">{titulo}</h2>
-    <p class="text-gray-200 md:w-1/2">{descricao}</p>
+<section class="relative w-full bg-cdh-blue h-[350px] p-12 flex gap-4 items-center justify-center flex-col text-center text-white">
+    <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+    
+    <div class="relative z-10">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">{titulo}</h2>
+        <p class="md:text-xl text-gray-300 lg:w-1/1">{descricao}</p>
+    </div>
 </section>
