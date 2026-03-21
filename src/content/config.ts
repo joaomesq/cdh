@@ -1,5 +1,17 @@
 import { defineCollection, z } from "astro:content";
 
+const noticias = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    summary: z.string().max(240),
+    category: z.enum(['Fraude','Prevenção','Parcerias','Operações','Tecnologia']).default('Prevenção'),
+    cover: z.string().optional(),
+    publishedAt: z.string(), // ISO date
+    author: z.string().default('Redação CISP'),
+  })
+});
+
 const blog = defineCollection({
   schema: z.object({
     title: z.string(),
@@ -12,6 +24,6 @@ const blog = defineCollection({
 });
 
 export const collections = {
-  blog,
+  blog, noticias
 };
 

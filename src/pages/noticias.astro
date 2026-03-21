@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import { getCollection } from 'astro:content';
+const all = (await getCollection('noticias')).sort((a,b)=> (a.data.publishedAt < b.data.publishedAt?1:-1));
+const categorias = ['Todas','Fraude','Prevenção','Parcerias','Operações','Tecnologia'];
+---
+
+<Layout>
+
+  <section class="container py-12">
+    <h1 class="mb-6 text-3xl font-bold">Notícias e Comunicados</h1>
+
+    <div class="grid gap-6 md:grid-cols-3">
+      {all.map((n)=> (
+        <article class="card">
+          {n.data.cover && <img src={n.data.cover} alt="" class="mb-3 h-40 w-full rounded object-cover" />}
+          <h3 class="mb-1 text-lg font-bold">{n.data.title}</h3>
+          <p class="mb-2 text-sm text-gray-600">{new Date(n.data.publishedAt).toLocaleDateString('pt-PT')} — {n.data.category}</p>
+          <p class="mb-3 text-gray-700">{n.data.summary}</p>
+          <a href={`/noticias/${n.slug}/`} class="text-cisp-blue hover:underline">Ler mais</a>
+        </article>
+      ))}
+    </div>
+</Layout>
