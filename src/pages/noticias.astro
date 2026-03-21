@@ -18,7 +18,7 @@ const categorias = ['Todas','Fraude','Prevenção','Parcerias','Operações','Te
           <h3 class="mb-1 text-lg font-bold">{n.data.title}</h3>
           <p class="mb-2 text-sm text-gray-600">{new Date(n.data.publishedAt).toLocaleDateString('pt-PT')} — {n.data.category}</p>
           <p class="mb-3 text-gray-700">{n.data.summary}</p>
-          <a href={`/noticias/${n.slug}/`} class="text-cisp-blue hover:underline">Ler mais</a>
+          <a href={`/noticias/${n.slug}/`} class="text-cdh-blue hover:underline">Ler mais</a>
         </article>
       ))}
     </div>
