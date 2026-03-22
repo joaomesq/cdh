@@ -5,7 +5,7 @@ const noticias = defineCollection({
   schema: z.object({
     title: z.string(),
     summary: z.string().max(240),
-    category: z.enum(['Fraude','Prevenção','Parcerias','Operações','Tecnologia']).default('Prevenção'),
+    category: z.enum(['Evento','Parcerias','Operações','Tecnologia', "Programção"]).default('Tecnologia'),
     cover: z.string().optional(),
     publishedAt: z.string(), // ISO date
     author: z.string().default('Redação CISP'),
