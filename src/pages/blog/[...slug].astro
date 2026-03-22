@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths(){
-    const posts = await getCollection("noticias");
+    const posts = await getCollection("blog");
     return posts.map((post)=> ({
         params: {slug: post.slug},
         props: {post},
@@ -13,7 +13,7 @@ export async function getStaticPaths(){
 const { post } = Astro.props;
 ---
 
-<Layout title = {`CDH | ${post.data.title}`}>
+<Layout >
 
   <article class="container prose max-w-3xl py-12">
     <p class="text-sm text-gray-600">{new Date(post.data.publishedAt).toLocaleDateString('pt-PT')} — {post.data.category}</p>

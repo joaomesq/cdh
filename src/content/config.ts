@@ -1,6 +1,6 @@
 import { defineCollection, z } from "astro:content";
 
-const noticias = defineCollection({
+const blog = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string(),
@@ -8,22 +8,13 @@ const noticias = defineCollection({
     category: z.enum(['Evento','Parcerias','Operações','Tecnologia', "Programção"]).default('Tecnologia'),
     cover: z.string().optional(),
     publishedAt: z.string(), // ISO date
-    author: z.string().default('Redação CISP'),
+    author: z.string().default('Redação CDH'),
   })
 });
 
-const blog = defineCollection({
-  schema: z.object({
-    title: z.string(),
-    pubDate: z.date(),
-    description: z.string(),
-    author: z.string(),
-    image: z.string().optional(),
-    tags: z.array(z.string()).optional(),
-  }),
-});
+
 
 export const collections = {
-  blog, noticias
+  blog
 };
 

@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 
 import { getCollection } from 'astro:content';
-const all = (await getCollection('noticias')).sort((a,b)=> (a.data.publishedAt < b.data.publishedAt?1:-1));
+const all = (await getCollection('blog')).sort((a,b)=> (a.data.publishedAt < b.data.publishedAt?1:-1));
 ---
 
 <Layout>
@@ -24,7 +24,7 @@ const all = (await getCollection('noticias')).sort((a,b)=> (a.data.publishedAt <
           <p class="mb-2 px-2 text-sm text-gray-600">{new Date(n.data.publishedAt).toLocaleDateString('pt-PT')} — {n.data.category}</p>
           <p class="mb-3 px-2 text-gray-700">{n.data.summary}</p>
           <p class="mb-3 px-2 text-sm text-gray-700">Autor: <strong>{n.data.author}</strong></p>
-          <a href={`/noticias/${n.slug}/`} class="text-cdh-blue px-2 hover:underline">Ler artigo completo</a>
+          <a href={`/blog/${n.slug}/`} class="text-cdh-blue px-2 hover:underline">Ler artigo completo</a>
         </article>
       ))}
     </div>
