@@ -9,7 +9,11 @@ export default function Historia(){
         <div className='text-gray-500 text-xl flex flex-col gap-4 items-center justify-center md:px-12'>
           <p>Fundada em 2024, a CDH nasceu da necessidade de criar um espaço onde desenvolvedores, designers, empreendedores e entusiastas da tecnologia pudessem colaborar, aprender e crescer juntos.</p>
 
-          <p>Começámos como um pequeno de amigos apaixonados por tecnologia que se reuniam regularmente para discutir projetos, partilhar conhecimento e apoiar-se mutuamente no desenvolvimento profissional.</p>
+          <p>
+            Começamos como um pequeno grupo de amigos apaixonados por tecnologia que se reuniam 
+            regularmente para discutir projetos, compartilhar conhecimento e apoiar-se mutuamente 
+            no desenvolvimento profissional.
+          </p>
         
           <p>
             De uma simples chama de ansiedade de servir aos outros, hoje revela-se como uma das mais vibrantes iniciativas juvenis na área digital da província, sob um forte compromisso
