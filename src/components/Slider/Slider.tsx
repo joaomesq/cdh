@@ -17,12 +17,12 @@ const slides: Slide[] = [
     {
         imagem: "/img/5.jpg",
         titulo: "Conectando mentes, Desenvolvendo soluçoões através da tecnologia.",
-        descricao: "Unidos pela paixão em tecnologia, criamos um ambiente onde o conhecimento flue livremente e cada membro contribui para o crescimento coletivo da nossa comunidade."
+        descricao: "Unidos pela paixão em tecnologia, criamos um ambiente onde o conhecimento fluí livremente e cada membro contribui para o crescimento colectivo da nossa comunidade."
     },
     {
         imagem: "/img/5.jpg",
         titulo: "Huambo no mapa!",
-        descricao: "Trabalhamos para posicionar Haumbo e Angola como referência em inovação tecnológica, desenvolvendo soluções que transformam vidas e impulsionam o progresso nacional."
+        descricao: "Trabalhamos para posicionar o Huambo e Angola como referência em inovação tecnológica, desenvolvendo soluções que transformam vidas e impulsionam o progresso nacional."
     },
 ]; 
 
