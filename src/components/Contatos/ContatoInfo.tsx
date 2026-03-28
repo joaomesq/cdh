@@ -14,7 +14,7 @@ export default function ContatoInfo() {
           <h2 className="text-4xl md:text-5xl font-bold text-orange-400">Ainda não achou o que procura?</h2>
           
           <p className="text-lg text-gray-600 w-full ">
-            <strong className="text-2xl">Tem dúvidas ou sugestões?</strong><br></br> Fale connosco pelo formulário ou atravésdos nossos canais oficiais.
+            <strong className="text-2xl">Tem dúvidas ou sugestões?</strong><br></br> Fale connosco pelo formulário ou através dos nossos canais oficiais.
           </p>
 
           {/* Ícones das redes sociais */}
