@@ -12,7 +12,7 @@ author: "Redação CDH"
 <div class="md:float-right">
    <img class="rounded-lg md:w-[600px] inline" src="/img/posts/principal-coding-angola.jpg" alt="Imagem de fam+ilia Coding Angola">
 </div>
-<p class="mb-2">A CDH - Comunidade de Desenvolvedores do Huambo, em colaboração com a empresa Soluções Firmes, realizou o grande concurso de programação Coding Angola, edição Ovina- Viokalihe</p>
+<p class="mb-2">A CDH - Comunidade de Desenvolvedores do Huambo, em colaboração com a empresa Soluções Firmes, realizou o grande concurso de programação Coding Angola, edição Ovina-Viokalihe - Huambo.</p>
 <p class="mb-2">Esta foi a primeira vez que o evento ocorreu na provincial do Huambo, após já terem ocorrido edições anteriores em Luanda. O concurso ocorreu no dia 6 de Junho, na Mediateca da Cidade do Planalto Central. 
 O evento contou com grandes surpresas e a participação de quatros concorrentes fantásticos:</p>
 
