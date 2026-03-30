@@ -2,17 +2,19 @@
 title: "Coding Angola edição Ovina-Viokalihe - Huambo"
 summary: "Primeira edição provincial do concurso de programação reuniu talentos de front-end e back-end"
 category: "Evento"
-cover: "/img/posts/coding.jpg"
+cover: "/img/posts/principal-coding-angola.jpg"
 publishedAt: "2025-06-07"
 tags: ["evento", "tecnologia", "concurso", "programação"]
 author: "Redação CDH"
 ---
 
-<h2 class="mb-4">A CDH - Comunidade de Desenvolvedores do Huambo, em colaboração com a empresa Soluções Firmes, realizou o grande concurso de programação Coding Angola, edição Ovina- Viokalihe</h2>
 
-Esta foi a primeira vez que o evento ocorreu na provincial do Huambo, após já terem ocorrido edições anteriores em Luanda. O concurso ocorreu no dia 6 de Junho, na Mediateca da Cidade do Planalto Central. 
-O evento contou com grandes surpresas e a participação de quatros concorrentes fantásticos:
-<br><br> 
+<div class="md:float-right">
+   <img class="rounded-lg md:w-[600px] inline" src="/img/posts/principal-coding-angola.jpg" alt="Imagem de fam+ilia Coding Angola">
+</div>
+<p class="mb-2">A CDH - Comunidade de Desenvolvedores do Huambo, em colaboração com a empresa Soluções Firmes, realizou o grande concurso de programação Coding Angola, edição Ovina- Viokalihe</p>
+<p class="mb-2">Esta foi a primeira vez que o evento ocorreu na provincial do Huambo, após já terem ocorrido edições anteriores em Luanda. O concurso ocorreu no dia 6 de Junho, na Mediateca da Cidade do Planalto Central. 
+O evento contou com grandes surpresas e a participação de quatros concorrentes fantásticos:</p>
 
 <p>
    - <strong>Domingos Panzo </strong> na categoria Back-End Laravel;
